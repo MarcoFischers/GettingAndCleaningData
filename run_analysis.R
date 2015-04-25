@@ -70,8 +70,12 @@ selected.cols <- c(selected.labels[,1], ncol(X.y.s.data)-1, ncol(X.y.s.data))
 # build data frame with selected features and activity and subject
 x.y.s <- X.y.s.data[ , selected.cols ]
 
-# strip off the "()" in feature names and append names for activity and subject
-labels <- c(sub("()","",selected.labels[,2],fixed=TRUE), c("activity", "subject"))
+# strip off the "()" in feature names
+labels <- sub("()","",selected.labels[,2],fixed=TRUE)
+# replace hyphen by dot
+labels <- gsub("-",".",labels,fixed=TRUE)
+# append names for activity and subject
+labels <- c(labels, c("activity", "subject"))
 
 # set names on data frame columns
 names(x.y.s) <- labels
@@ -89,6 +93,9 @@ x.y.s <- mutate(x.y.s, activity = y.labels[activity, 2])
 group.y.s <- group_by(x.y.s, activity, subject)
 # summarize per group item taking mean values of feature variables
 tidy.data <- summarise_each(group.y.s, funs(mean))
+
+# change label names .std to .avgd to express average of std 
+names(tidy.data) <- sub(".std",".avgd",names(tidy.data),fixed=TRUE)
 
 # write tidy data to text file
 write.table(tidy.data, file="tidy_data.txt", row.names=FALSE)

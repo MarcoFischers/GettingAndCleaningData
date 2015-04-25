@@ -13,94 +13,94 @@ The **features** were derived from the original dataset by selecting features
 representing mean and standard deviation values and computing averages 
 per activity and subject:  
 
-* '-mean'     Average of original feature mean value  
-* '-std'      Average of original feature standard deviation value  
+* '.mean'    Average of original feature mean value  
+* '.avgd'    Average of original feature standard deviation value  
   
   
 | feature                   | remark
 |---------------------------|---------------------------------------
-| tBodyAcc-mean-X           | body acceleration vector
-| tBodyAcc-mean-Y           |
-| tBodyAcc-mean-Z           |
-| tBodyAcc-std-X            |
-| tBodyAcc-std-Y            |
-| tBodyAcc-std-Z            |
+| tBodyAcc.mean.X           | body acceleration vector
+| tBodyAcc.mean.Y           |
+| tBodyAcc.mean.Z           |
+| tBodyAcc.avgd.X           |
+| tBodyAcc.avgd.Y           |
+| tBodyAcc.avgd.Z           |
 |                           |
-| tGravityAcc-mean-X        | gravity acceleration vector
-| tGravityAcc-mean-Y        |
-| tGravityAcc-mean-Z        |
-| tGravityAcc-std-X         |
-| tGravityAcc-std-Y         |
-| tGravityAcc-std-Z         |
+| tGravityAcc.mean.X        | gravity acceleration vector
+| tGravityAcc.mean.Y        |
+| tGravityAcc.mean.Z        |
+| tGravityAcc.avgd.X        |
+| tGravityAcc.avgd.Y        |
+| tGravityAcc.avgd.Z        |
 |                           |
-| tBodyAccJerk-mean-X       | body jerk vector
-| tBodyAccJerk-mean-Y       |
-| tBodyAccJerk-mean-Z       |
-| tBodyAccJerk-std-X        |
-| tBodyAccJerk-std-Y        |
-| tBodyAccJerk-std-Z        |
+| tBodyAccJerk.mean.X       | body jerk vector
+| tBodyAccJerk.mean.Y       |
+| tBodyAccJerk.mean.Z       |
+| tBodyAccJerk.avgd.X       |
+| tBodyAccJerk.avgd.Y       |
+| tBodyAccJerk.avgd.Z       |
 |                           |
-| tBodyGyro-mean-X          | body angular velocity vector
-| tBodyGyro-mean-Y          |
-| tBodyGyro-mean-Z          |
-| tBodyGyro-std-X           |
-| tBodyGyro-std-Y           |
-| tBodyGyro-std-Z           |
+| tBodyGyro.mean.X          | body angular velocity vector
+| tBodyGyro.mean.Y          |
+| tBodyGyro.mean.Z          |
+| tBodyGyro.avgd.X          |
+| tBodyGyro.avgd.Y          |
+| tBodyGyro.avgd.Z          |
 |                           |
-| tBodyGyroJerk-mean-X      | body angular acceleration vector
-| tBodyGyroJerk-mean-Y      |
-| tBodyGyroJerk-mean-Z      |
-| tBodyGyroJerk-std-X       |
-| tBodyGyroJerk-std-Y       |
-| tBodyGyroJerk-std-Z       |
+| tBodyGyroJerk.mean.X      | body angular acceleration vector
+| tBodyGyroJerk.mean.Y      |
+| tBodyGyroJerk.mean.Z      |
+| tBodyGyroJerk.avgd.X      |
+| tBodyGyroJerk.avgd.Y      |
+| tBodyGyroJerk.avgd.Z      |
 |                           |
-| tBodyAccMag-mean          | body acceleration magnitude
-| tBodyAccMag-std           |
+| tBodyAccMag.mean          | body acceleration magnitude
+| tBodyAccMag.avgd          |
 |                           |
-| tGravityAccMag-mean       | gravity acceleration magnitude
-| tGravityAccMag-std        |
+| tGravityAccMag.mean       | gravity acceleration magnitude
+| tGravityAccMag.avgd       |
 |                           |
-| tBodyAccJerkMag-mean      | body jerk magnitude
-| tBodyAccJerkMag-std       |
+| tBodyAccJerkMag.mean      | body jerk magnitude
+| tBodyAccJerkMag.avgd      |
 |                           |
-| tBodyGyroMag-mean         | body angular velocity magnitude
-| tBodyGyroMag-std          |
+| tBodyGyroMag.mean         | body angular velocity magnitude
+| tBodyGyroMag.avgd         |
 |                           |
-| tBodyGyroJerkMag-mean     | body angular acceleration magnitude
-| tBodyGyroJerkMag-std      |
+| tBodyGyroJerkMag.mean     | body angular acceleration magnitude
+| tBodyGyroJerkMag.avgd     |
 |                           |
-| fBodyAcc-mean-X           | FFT of body acceleration
-| fBodyAcc-mean-Y           |
-| fBodyAcc-mean-Z           |
-| fBodyAcc-std-X            |
-| fBodyAcc-std-Y            |
-| fBodyAcc-std-Z            |
+| fBodyAcc.mean.X           | FFT of body acceleration
+| fBodyAcc.mean.Y           |
+| fBodyAcc.mean.Z           |
+| fBodyAcc.avgd.X           |
+| fBodyAcc.avgd.Y           |
+| fBodyAcc.avgd.Z           |
 |                           |
-| fBodyAccJerk-mean-X       | FFT of body jerk
-| fBodyAccJerk-mean-Y       |
-| fBodyAccJerk-mean-Z       |
-| fBodyAccJerk-std-X        |
-| fBodyAccJerk-std-Y        |
-| fBodyAccJerk-std-Z        |
+| fBodyAccJerk.mean.X       | FFT of body jerk
+| fBodyAccJerk.mean.Y       |
+| fBodyAccJerk.mean.Z       |
+| fBodyAccJerk.avgd.X       |
+| fBodyAccJerk.avgd.Y       |
+| fBodyAccJerk.avgd.Z       |
 |                           |
-| fBodyGyro-mean-X          | FFT of body angular velocity
-| fBodyGyro-mean-Y          |
-| fBodyGyro-mean-Z          |
-| fBodyGyro-std-X           |
-| fBodyGyro-std-Y           |
-| fBodyGyro-std-Z           |
+| fBodyGyro.mean.X          | FFT of body angular velocity
+| fBodyGyro.mean.Y          |
+| fBodyGyro.mean.Z          |
+| fBodyGyro.avgd.X          |
+| fBodyGyro.avgd.Y          |
+| fBodyGyro.avgd.Z          |
 |                           |
-| fBodyAccMag-mean          | FFT of body acceleration magnitude
-| fBodyAccMag-std           |
+| fBodyAccMag.mean          | FFT of body acceleration magnitude
+| fBodyAccMag.avgd          |
 |                           |
-| fBodyBodyAccJerkMag-mean  | FFT of body jerk magnitude
-| fBodyBodyAccJerkMag-std   |
+| fBodyBodyAccJerkMag.mean  | FFT of body jerk magnitude
+| fBodyBodyAccJerkMag.avgd  |
 |                           |
-| fBodyBodyGyroMag-mean     | FFT of angular velocity magnitude
-| fBodyBodyGyroMag-std      |
+| fBodyBodyGyroMag.mean     | FFT of angular velocity magnitude
+| fBodyBodyGyroMag.avgd     |
 |                           |
-| fBodyBodyGyroJerkMag-mean | FFT of angular acceleration magnitude
-| fBodyBodyGyroJerkMag-std  |
+| fBodyBodyGyroJerkMag.mean | FFT of angular acceleration magnitude
+| fBodyBodyGyroJerkMag.avgd |
 
   
 ## Additional Notes
